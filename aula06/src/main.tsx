@@ -7,6 +7,14 @@ import Produtos from './roules/Produtos/index.tsx';
 import EditarProdutos from './roules/EditarProdutos/index.tsx';
 import Error from './roules/Error/index.tsx';
 
+const roules = createBrowserRouter([
+  {path:"/", element:<App/>, errorElement:<Error/>, children:[
+    {path:"/", element:<Home/>},
+    {path:"/produtos", element:<Produtos/>},
+    {path:"/editar/produtos/:id", element:<EditarProdutos/>},
+  ]}
+]);
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <App />
