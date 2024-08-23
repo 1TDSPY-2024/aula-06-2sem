@@ -1,10 +1,13 @@
+import { Link } from "react-router-dom";
+
+
 export default function Menu(){
     return(
     <nav>
         <ul>
-            <li>Home</li>
-            <li>Produtos</li>
-            <li>EditarProdutos</li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/produtos">Produtos</Link> </li>
+            <li><Link to="/editar/produtos/1">EditarProdutos</Link> </li>
         </ul>
     </nav>
 );

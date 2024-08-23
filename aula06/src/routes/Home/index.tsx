@@ -1,5 +1,7 @@
+import Menu from "../../components/Menu/Menu";
+
 export default function Home(){
     return(
-        <div><h1>Componete Home</h1></div>
+        <div><Menu/></div>
     );
 }
