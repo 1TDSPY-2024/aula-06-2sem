@@ -1,5 +1,5 @@
 export default function EditarProdutos(){
     return(
-        <div>Editar produtos</div>
+        <div><h1>Editar produtos</h1></div>
     );
 }
