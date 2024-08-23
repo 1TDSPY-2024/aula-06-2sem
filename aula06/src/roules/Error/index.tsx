@@ -1,9 +1,14 @@
+import { Link } from "react-router-dom";
+
 export default function Error() {
-    return (
+  return (
+    <div>
+      <h1>Erro 404 - Pagina não encontrada</h1>
       <div>
-        <h1>Componentes Error:</h1>
+        <p><Link to="/">Home</Link></p>
       </div>
-  
-  
-    );
-  }
+    </div>
+
+
+  );
+}
